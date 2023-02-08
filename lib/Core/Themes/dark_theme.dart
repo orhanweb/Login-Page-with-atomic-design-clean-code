@@ -4,9 +4,10 @@ import 'package:flutter/material.dart';
 mixin CThemeMixin {
   ThemeData get darkTheme => ThemeData.dark().copyWith(
       //Appbar Theme
-      appBarTheme: const AppBarTheme(
-        backgroundColor: CColors.primarybackground,
+      appBarTheme: AppBarTheme(
+        backgroundColor: CColors.primarybackground.withOpacity(0),
         centerTitle: true,
+        elevation: 0,
       ),
 
       //Scaffold Theme
